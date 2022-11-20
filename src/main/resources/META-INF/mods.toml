@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[43,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "allinclusive"
+version = "${file.jarVersion}"
+displayName = "AllInclusive"
+authors = "MrStupsi"
+description = '''
+A Minecraft mod which includes all
+'''
+
+[[dependencies.allinclusive]]
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.allinclusive]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,1.20)"
+ordering = "NONE"
+side = "BOTH"
