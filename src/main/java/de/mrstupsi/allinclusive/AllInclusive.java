@@ -1,8 +1,10 @@
 package de.mrstupsi.allinclusive;
 
 import de.mrstupsi.allinclusive.block.SteelBlock;
+import de.mrstupsi.allinclusive.item.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -30,6 +32,16 @@ public class AllInclusive {
         modEventBus.addListener(this::commonSetup);
         BLOCKS.register("steel_block", () -> SteelBlock.INSTANCE);
         ITEMS.register("steel_block", () -> SteelBlock.ITEM);
+        ITEMS.register("steel_axe", () -> SteelAxe.INSTANCE);
+        ITEMS.register("steel_boots", () -> SteelBoots.INSTANCE);
+        ITEMS.register("steel_chestplate", () -> SteelChestplate.INSTANCE);
+        ITEMS.register("steel_helmet", () -> SteelHelmet.INSTANCE);
+        ITEMS.register("steel_hoe", () -> SteelHoe.INSTANCE);
+        ITEMS.register("steel_ingot", () -> SteelIngot.INSTANCE);
+        ITEMS.register("steel_leggings", () -> SteelLeggings.INSTANCE);
+        ITEMS.register("steel_pickaxe", () -> SteelPickaxe.INSTANCE);
+        ITEMS.register("steel_shovel", () -> SteelShovel.INSTANCE);
+        ITEMS.register("steel_sword", () -> SteelSword.INSTANCE);
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
@@ -42,7 +54,7 @@ public class AllInclusive {
     public void onServerStarting(ServerStartingEvent event) {
     }
 
-    @Mod.EventBusSubscriber(modid = "allinclusive", bus = Mod.EventBusSubscriber.Bus.MOD)
+    @Mod.EventBusSubscriber(modid = "allinclusive", bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
