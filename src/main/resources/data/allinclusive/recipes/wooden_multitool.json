@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["#P#", " S ", " X "],
+    "key": {
+        "#": {"tag": "minecraft:planks"},
+        "P": {"item": "minecraft:wooden_pickaxe"},
+        "S": {"item": "minecraft:wooden_sword"},
+        "X": {"item": "minecraft:stick"}
+    },
+    "result": {
+        "item": "allinclusive:wooden_multitool",
+        "count": 1
+    }
+}

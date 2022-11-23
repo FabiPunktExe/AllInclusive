@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["#P#", " S ", " X "],
+    "key": {
+        "#": {"item": "allinclusive:steel_ingot"},
+        "P": {"item": "allinclusive:steel_pickaxe"},
+        "S": {"item": "allinclusive:steel_sword"},
+        "X": {"item": "minecraft:stick"}
+    },
+    "result": {
+        "item": "allinclusive:steel_multitool",
+        "count": 1
+    }
+}

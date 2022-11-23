@@ -8,6 +8,6 @@ public class SteelIngot extends Item {
     public static final SteelIngot INSTANCE = new SteelIngot();
 
     public SteelIngot() {
-        super(new Item.Properties().tab(AllInclusive.TAB).craftRemainder(SteelBlock.INSTANCE.asItem()));
+        super(new Item.Properties().tab(AllInclusive.TAB));
     }
 }

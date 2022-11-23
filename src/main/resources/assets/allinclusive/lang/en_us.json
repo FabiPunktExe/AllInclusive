@@ -1,6 +1,10 @@
 {
     "itemGroup.allinclusive": "AllInclusive",
     "block.allinclusive.steel_block": "Steel Block",
+    "item.allinclusive.diamond_multitool": "Diamond Multitool",
+    "item.allinclusive.golden_multitool": "Golden Multitool",
+    "item.allinclusive.iron_multitool": "Iron Multitool",
+    "item.allinclusive.netherite_multitool": "Netherite Multitool",
     "item.allinclusive.steel_axe": "Steel Axe",
     "item.allinclusive.steel_boots": "Steel Boots",
     "item.allinclusive.steel_chestplate": "Steel Chestplate",
@@ -11,5 +15,7 @@
     "item.allinclusive.steel_multitool": "Steel Multitool",
     "item.allinclusive.steel_pickaxe": "Steel Pickaxe",
     "item.allinclusive.steel_shovel": "Steel Shovel",
-    "item.allinclusive.steel_sword": "Steel Sword"
+    "item.allinclusive.steel_sword": "Steel Sword",
+    "item.allinclusive.stone_multitool": "Stone Multitool",
+    "item.allinclusive.wooden_multitool": "Wooden Multitool"
 }

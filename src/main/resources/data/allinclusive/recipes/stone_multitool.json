@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["#P#", " S ", " X "],
+    "key": {
+        "#": {"tag": "minecraft:stone_tool_materials"},
+        "P": {"item": "minecraft:stone_pickaxe"},
+        "S": {"item": "minecraft:stone_sword"},
+        "X": {"item": "minecraft:stick"}
+    },
+    "result": {
+        "item": "allinclusive:stone_multitool",
+        "count": 1
+    }
+}

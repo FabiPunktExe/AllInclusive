@@ -1,6 +1,6 @@
 {
     "parent": "minecraft:item/handheld",
     "textures": {
-        "layer0": "allinclusive:item/steel_multitool"
+        "layer0": "allinclusive:item/golden_multitool"
     }
 }
