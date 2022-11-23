@@ -19,7 +19,7 @@ public class SteelTier implements Tier {
 
     @Override
     public float getAttackDamageBonus() {
-        return 2.5F;
+        return 2.0F;
     }
 
     @Override

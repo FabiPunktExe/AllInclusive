@@ -1,12 +1,12 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern": ["##", "X#", "X "],
+    "pattern": ["##", "X ", "X "],
     "key": {
         "X": {"item": "minecraft:stick"},
         "#": {"item": "allinclusive:steel_ingot"}
     },
     "result": {
-        "item": "allinclusive:steel_axe",
+        "item": "allinclusive:steel_hoe",
         "count": 1
     }
 }

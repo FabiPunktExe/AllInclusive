@@ -39,6 +39,7 @@ public class AllInclusive {
         ITEMS.register("steel_hoe", () -> SteelHoe.INSTANCE);
         ITEMS.register("steel_ingot", () -> SteelIngot.INSTANCE);
         ITEMS.register("steel_leggings", () -> SteelLeggings.INSTANCE);
+        ITEMS.register("steel_multitool", () -> SteelMultiTool.INSTANCE);
         ITEMS.register("steel_pickaxe", () -> SteelPickaxe.INSTANCE);
         ITEMS.register("steel_shovel", () -> SteelShovel.INSTANCE);
         ITEMS.register("steel_sword", () -> SteelSword.INSTANCE);

@@ -1,11 +1,11 @@
 {
     "type": "minecraft:crafting_shaped",
-    "pattern": ["# #", "###", "###"],
+    "pattern": ["# #", "# #"],
     "key": {
         "#": {"item": "allinclusive:steel_ingot"}
     },
     "result": {
-        "item": "allinclusive:steel_chestplate",
+        "item": "allinclusive:steel_boots",
         "count": 1
     }
 }
