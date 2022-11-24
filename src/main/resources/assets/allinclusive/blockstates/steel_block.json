@@ -1,7 +1,5 @@
 {
     "variants": {
-        "": {
-            "model": "allinclusive:block/steel_block"
-        }
+        "": {"model": "allinclusive:block/steel_block"}
     }
 }

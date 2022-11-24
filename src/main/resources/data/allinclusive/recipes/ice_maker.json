@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["# #", "SBS", "###"],
+    "key": {
+        "#": {"tag":  "minecraft:stone_tool_materials"},
+        "S": {"item": "minecraft:snow_block"},
+        "B": {"item": "minecraft:bucket"}
+    },
+    "result": {
+        "item": "allinclusive:ice_maker",
+        "count": 1
+    }
+}

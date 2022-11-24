@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "stage=0":  {"model": "allinclusive:block/ice_maker_stage0"},
+        "stage=1":  {"model": "allinclusive:block/ice_maker_stage1"},
+        "stage=2":  {"model": "allinclusive:block/ice_maker_stage2"},
+        "stage=3":  {"model": "allinclusive:block/ice_maker_stage3"},
+        "stage=4":  {"model": "allinclusive:block/ice_maker_stage4"},
+        "stage=5":  {"model": "allinclusive:block/ice_maker_stage5"},
+        "stage=6":  {"model": "allinclusive:block/ice_maker_stage6"},
+        "stage=7":  {"model": "allinclusive:block/ice_maker_stage7"},
+        "stage=8":  {"model": "allinclusive:block/ice_maker_stage8"},
+        "stage=9":  {"model": "allinclusive:block/ice_maker_stage9"},
+        "stage=10": {"model": "allinclusive:block/ice_maker_stage10"},
+        "stage=11": {"model": "allinclusive:block/ice_maker_stage11"},
+        "stage=12": {"model": "allinclusive:block/ice_maker_stage12"},
+        "stage=13": {"model": "allinclusive:block/ice_maker_stage13"},
+        "stage=14": {"model": "allinclusive:block/ice_maker_stage14"},
+        "stage=15": {"model": "allinclusive:block/ice_maker_stage15"},
+        "stage=16": {"model": "allinclusive:block/ice_maker_stage16"}
+    }
+}

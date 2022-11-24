@@ -1,5 +1,6 @@
 package de.mrstupsi.allinclusive;
 
+import de.mrstupsi.allinclusive.block.IceMaker;
 import de.mrstupsi.allinclusive.block.SteelBlock;
 import de.mrstupsi.allinclusive.item.*;
 import net.minecraft.world.item.*;
@@ -49,6 +50,8 @@ public class AllInclusive {
         ITEMS.register("steel_multitool", () -> SteelMultiTool.INSTANCE);
         ITEMS.register("diamond_multitool", () -> DiamondMultiTool.INSTANCE);
         ITEMS.register("netherite_multitool", () -> NetheriteMultiTool.INSTANCE);
+        BLOCKS.register("ice_maker", () -> IceMaker.INSTANCE);
+        ITEMS.register("ice_maker", () -> IceMaker.ITEM);
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
