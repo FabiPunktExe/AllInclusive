@@ -1,7 +1,9 @@
 {
     "itemGroup.allinclusive": "AllInclusive",
+    "block.allinclusive.cheese_maker": "Cheese Maker",
     "block.allinclusive.ice_maker": "Ice Maker",
     "block.allinclusive.steel_block": "Steel Block",
+    "item.allinclusive.cheese": "Cheese",
     "item.allinclusive.diamond_multitool": "Diamond Multitool",
     "item.allinclusive.golden_multitool": "Golden Multitool",
     "item.allinclusive.iron_multitool": "Iron Multitool",

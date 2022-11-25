@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "top": "allinclusive:block/cheese_maker_top_stage3",
+        "bottom": "allinclusive:block/machine_bottom",
+        "side": "allinclusive:block/machine_side"
+    }
+}

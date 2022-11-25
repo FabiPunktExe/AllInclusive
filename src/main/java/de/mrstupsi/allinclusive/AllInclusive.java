@@ -1,10 +1,12 @@
 package de.mrstupsi.allinclusive;
 
+import de.mrstupsi.allinclusive.block.CheeseMaker;
 import de.mrstupsi.allinclusive.block.IceMaker;
 import de.mrstupsi.allinclusive.block.SteelBlock;
 import de.mrstupsi.allinclusive.item.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -52,6 +54,9 @@ public class AllInclusive {
         ITEMS.register("netherite_multitool", () -> NetheriteMultiTool.INSTANCE);
         BLOCKS.register("ice_maker", () -> IceMaker.INSTANCE);
         ITEMS.register("ice_maker", () -> IceMaker.ITEM);
+        ITEMS.register("cheese", () -> Cheese.INSTANCE);
+        BLOCKS.register("cheese_maker", () -> CheeseMaker.INSTANCE);
+        ITEMS.register("cheese_maker", () -> CheeseMaker.ITEM);
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
