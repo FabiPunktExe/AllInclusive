@@ -28,7 +28,7 @@ public class CheeseMaker extends Block {
     public static final BlockItem ITEM = new BlockItem(INSTANCE, new Item.Properties().tab(AllInclusive.TAB));
 
     public CheeseMaker() {
-        super(Properties.of(Material.STONE).randomTicks().strength(3.5F).sound(SoundType.STONE));
+        super(Properties.of(Material.STONE).requiresCorrectToolForDrops().randomTicks().strength(3.5F).sound(SoundType.STONE));
     }
 
     @Override

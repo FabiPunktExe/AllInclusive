@@ -1,12 +1,17 @@
 package de.mrstupsi.allinclusive;
 
-import de.mrstupsi.allinclusive.block.CheeseMaker;
-import de.mrstupsi.allinclusive.block.IceMaker;
-import de.mrstupsi.allinclusive.block.SteelBlock;
+import com.google.common.collect.Lists;
+import de.mrstupsi.allinclusive.block.*;
 import de.mrstupsi.allinclusive.item.*;
+import net.minecraft.core.Registry;
+import net.minecraft.data.worldgen.features.OreFeatures;
+import net.minecraft.data.worldgen.placement.OrePlacements;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +28,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class AllInclusive {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, "allinclusive");
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "allinclusive");
+    public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, "allinclusive");
+    public static final DeferredRegister<PlacedFeature> PLACED_FEATURES = DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, "allinclusive");
     public static final CreativeModeTab TAB = new CreativeModeTab("allinclusive") {
         @Override
         public ItemStack makeIcon() {
@@ -57,8 +64,15 @@ public class AllInclusive {
         ITEMS.register("cheese", () -> Cheese.INSTANCE);
         BLOCKS.register("cheese_maker", () -> CheeseMaker.INSTANCE);
         ITEMS.register("cheese_maker", () -> CheeseMaker.ITEM);
+        BLOCKS.register("randomite", () -> Randomite.INSTANCE);
+        ITEMS.register("randomite", () -> Randomite.ITEM);
+        PLACED_FEATURES.register("randomite_placed", () -> Randomite.RANDOMITE_PLACED);
+        BLOCKS.register("deepslate_randomite", () -> DeepslateRandomite.INSTANCE);
+        ITEMS.register("deepslate_randomite", () -> DeepslateRandomite.ITEM);
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
+        CONFIGURED_FEATURES.register(modEventBus);
+        PLACED_FEATURES.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 

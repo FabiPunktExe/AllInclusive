@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["# #", "#B#", "###"],
+    "key": {
+        "#": {"tag":  "minecraft:stone_tool_materials"},
+        "B": {"item": "minecraft:bucket"}
+    },
+    "result": {
+        "item": "allinclusive:cheese_maker",
+        "count": 1
+    }
+}

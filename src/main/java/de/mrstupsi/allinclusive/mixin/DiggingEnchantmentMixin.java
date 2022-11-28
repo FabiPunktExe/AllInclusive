@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(DiggingEnchantment.class)
 public class DiggingEnchantmentMixin {
-    @Inject(at = @At(value = "RETURN"), method = "canEnchant")
+    @Inject(at = @At(value = "RETURN"), method = "canEnchant", cancellable = true)
     public void canEnchant(ItemStack is, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(cir.getReturnValue() || is.getItem() instanceof MultiTool);
     }
