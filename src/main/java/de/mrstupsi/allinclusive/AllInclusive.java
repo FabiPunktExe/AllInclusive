@@ -9,6 +9,7 @@ import net.minecraft.data.worldgen.placement.OrePlacements;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
@@ -30,6 +31,7 @@ public class AllInclusive {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "allinclusive");
     public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = DeferredRegister.create(Registry.CONFIGURED_FEATURE_REGISTRY, "allinclusive");
     public static final DeferredRegister<PlacedFeature> PLACED_FEATURES = DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, "allinclusive");
+    public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister.create(Registry.BLOCK_ENTITY_TYPE_REGISTRY, "allinclusive");
     public static final CreativeModeTab TAB = new CreativeModeTab("allinclusive") {
         @Override
         public ItemStack makeIcon() {
@@ -69,6 +71,16 @@ public class AllInclusive {
         PLACED_FEATURES.register("randomite_placed", () -> Randomite.RANDOMITE_PLACED);
         BLOCKS.register("deepslate_randomite", () -> DeepslateRandomite.INSTANCE);
         ITEMS.register("deepslate_randomite", () -> DeepslateRandomite.ITEM);
+        ITEMS.register("gravity_boots", () -> GravityBoots.INSTANCE);
+        BLOCKS.register("graviator", () -> Graviator.INSTANCE);
+        ITEMS.register("graviator", () -> Graviator.ITEM);
+        BLOCK_ENTITY_TYPES.register("graviator", () -> Graviator.GraviatorBlockEntity.TYPE);
+        BLOCKS.register("attractor", () -> Attractor.INSTANCE);
+        ITEMS.register("attractor", () -> Attractor.ITEM);
+        BLOCK_ENTITY_TYPES.register("attractor", () -> Attractor.AttractorBlockEntity.TYPE);
+        BLOCKS.register("repullsor", () -> Repullsor.INSTANCE);
+        ITEMS.register("repullsor", () -> Repullsor.ITEM);
+        BLOCK_ENTITY_TYPES.register("repullsor", () -> Repullsor.RepullsorBlockEntity.TYPE);
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         CONFIGURED_FEATURES.register(modEventBus);

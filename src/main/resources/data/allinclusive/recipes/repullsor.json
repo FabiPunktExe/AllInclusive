@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["RIR", "ICI", "RIR"],
+    "key": {
+        "R": {"item": "minecraft:redstone"},
+        "I": {"item": "minecraft:iron_ingot"},
+        "C": {"item": "minecraft:compass"}
+    },
+    "result": {
+        "item": "allinclusive:cheese_maker",
+        "count": 1
+    }
+}
