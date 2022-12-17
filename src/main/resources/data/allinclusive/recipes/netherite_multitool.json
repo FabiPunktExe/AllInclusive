@@ -1,9 +1,0 @@
-{
-    "type": "minecraft:smithing",
-    "base": {"item": "allinclusive:diamond_multitool"},
-    "addition": {"item": "minecraft:netherite_ingot"},
-    "result": {
-        "item": "allinclusive:diamond_multitool",
-        "count": 1
-    }
-}

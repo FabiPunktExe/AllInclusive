@@ -5,9 +5,6 @@
     "compatibilityLevel": "JAVA_8",
     "refmap": "allinclusive.refmap.json",
     "mixins": [
-        "DiggingEnchantmentMixin",
-        "LootBonusEnchantmentMixin",
-        "UntouchingEnchantmentMixin"
     ],
     "client": [
     ],
