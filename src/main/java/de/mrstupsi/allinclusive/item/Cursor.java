@@ -28,7 +28,7 @@ public class Cursor extends Item {
     public static final HashMap<Player, BlockPos> INTERACTED_POSITIONS = new HashMap<>();
 
     public Cursor() {
-        super(new Properties().tab(AllInclusive.TAB).craftRemainder(Items.WHITE_WOOL));
+        super(new Properties().tab(AllInclusive.TAB).stacksTo(1).craftRemainder(Items.WHITE_WOOL));
         MinecraftForge.EVENT_BUS.register(this);
     }
 
