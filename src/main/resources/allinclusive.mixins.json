@@ -5,6 +5,9 @@
     "compatibilityLevel": "JAVA_8",
     "refmap": "allinclusive.refmap.json",
     "mixins": [
+        "BaseContainerBlockEntityMixin",
+        "BlockEntityMixin",
+        "RandomizableContainerBlockEntityMixin"
     ],
     "client": [
     ],

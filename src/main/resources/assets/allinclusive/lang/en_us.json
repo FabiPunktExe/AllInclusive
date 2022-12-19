@@ -2,5 +2,6 @@
     "itemGroup.allinclusive": "AllInclusive (Assorted)",
     "block.allinclusive.cheese_maker": "Cheese Maker",
     "block.allinclusive.ice_maker": "Ice Maker",
-    "item.allinclusive.cheese": "Cheese"
+    "item.allinclusive.cheese": "Cheese",
+    "item.allinclusive.cursor": "Cursor"
 }

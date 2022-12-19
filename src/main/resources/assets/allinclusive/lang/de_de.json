@@ -2,5 +2,6 @@
     "itemGroup.allinclusive": "AllInclusive (Assorted)",
     "block.allinclusive.cheese_maker": "Käsemaschiene",
     "block.allinclusive.ice_maker": "Eismaschiene",
-    "item.allinclusive.cheese": "Käse"
+    "item.allinclusive.cheese": "Käse",
+    "item.allinclusive.cursor": "Mauszeiger"
 }
