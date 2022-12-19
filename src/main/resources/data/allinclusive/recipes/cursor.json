@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": ["W  ", "WWW", "WWW"],
+    "key": {
+        "W": {"item":  "minecraft:white_wool"}
+    },
+    "result": {
+        "item": "allinclusive:cursor",
+        "count": 1
+    }
+}
