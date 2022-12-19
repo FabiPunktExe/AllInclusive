@@ -5,8 +5,11 @@
     "compatibilityLevel": "JAVA_8",
     "refmap": "allinclusive.refmap.json",
     "mixins": [
+        "BaseContainerBlockEntityMixin",
+        "BlockEntityMixin",
         "DiggingEnchantmentMixin",
         "LootBonusEnchantmentMixin",
+        "RandomizableContainerBlockEntityMixin",
         "UntouchingEnchantmentMixin"
     ],
     "client": [

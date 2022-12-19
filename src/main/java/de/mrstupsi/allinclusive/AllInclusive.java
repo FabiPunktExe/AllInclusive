@@ -1,16 +1,11 @@
 package de.mrstupsi.allinclusive;
 
-import com.google.common.collect.Lists;
 import de.mrstupsi.allinclusive.block.*;
 import de.mrstupsi.allinclusive.item.*;
 import net.minecraft.core.Registry;
-import net.minecraft.data.worldgen.features.OreFeatures;
-import net.minecraft.data.worldgen.placement.OrePlacements;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.api.distmarker.Dist;
@@ -81,6 +76,7 @@ public class AllInclusive {
         BLOCKS.register("repullsor", () -> Repullsor.INSTANCE);
         ITEMS.register("repullsor", () -> Repullsor.ITEM);
         BLOCK_ENTITY_TYPES.register("repullsor", () -> Repullsor.RepullsorBlockEntity.TYPE);
+        ITEMS.register("cursor", () -> Cursor.INSTANCE);
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         CONFIGURED_FEATURES.register(modEventBus);
